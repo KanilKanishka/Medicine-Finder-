@@ -1,22 +1,14 @@
-package Medicine.Finder.Medicine.Finder.Entity;
+package Medicine.Finder.Medicine.Finder.DTO;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
-
+import lombok.ToString;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name="MEDICINE_TBL")
-public class Medicine {
-
-
-    @Id
-    @GeneratedValue
+@ToString
+public class MedicineDTO {
     private int id;
     private String name;
     private int quantity;

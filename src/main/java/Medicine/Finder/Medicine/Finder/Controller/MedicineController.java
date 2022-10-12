@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-//@RequestMapping("Medicinedetails")
+@RequestMapping("/registration")
 public class MedicineController {
 
     @Autowired
@@ -25,6 +25,7 @@ public class MedicineController {
     }
 
     @GetMapping("/Medicines")
+
     public List<Medicine> findAllMedicines(){
         return medicineService.getMedicines();
     }
